@@ -5,13 +5,15 @@ import CustomCarousel from "./CustomCarousel";
 import { SliderData } from "../data/data";
 import DematAccountForm from "./DematAccountForm";
 import Inverstment from "./Inverstment";
+import DematAccount from "./DematAccount";
+import Testimonial from "./Testimonial";
 
 
 const InventureLandingPage = () => {
   return (
     <div className="w-full h-auto">
       {/* Navbar */}
-      <nav className="w-full fixed z-20 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 firefox:bg-opacity-90">
+      <nav className="w-full fixed z-20 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
         <div className="w-[94%] h-20 mx-auto flex items-center ">
           <div className="w-[15%] mr-[2%]">
             <img src={InventureLogo} alt="Inventure Logo" />
@@ -47,6 +49,18 @@ const InventureLandingPage = () => {
       <div className="mt-16">
         <Inverstment />
       </div>
+
+        {/* Demat Account  */}
+      <div className="mt-16">
+          <DematAccount/>
+      </div>
+
+      {/* Testimonial section */}
+      <div>
+        <Testimonial/>
+      </div>
+
+      
     </div>
   );
 };
