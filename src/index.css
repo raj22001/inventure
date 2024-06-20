@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+html {
+   height: 100%;
+}
+
+#root {
+   height: 100%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   /* overflow-x: hidden; */
+}
+
 .glass-effect {
    background: rgba(255, 255, 255, 0.2);
    /* semi-transparent background */
@@ -81,6 +97,7 @@
    box-sizing: border-box;
    min-width: 100%;
    height: auto;
+   margin-top: 100px;
    overflow: hidden;
    object-fit: cover;
    height: auto;
@@ -124,4 +141,56 @@
 
 .slick-slide>div {
    margin: 0 15px;
+}
+
+
+/* FAQ CSS  */
+.faqs {
+   width: 100%;
+   max-width: 768px;
+   margin: 0 auto;
+   padding: 15px;
+}
+
+.faqs .faq {
+   margin: 15px;
+   padding: 15px;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+   border: 1px solid #D9D9D9;
+}
+
+.faqs .faq .faq-question {
+   position: relative;
+   font-size: 20px;
+   padding-right: 80px;
+   transition: all 0.4s ease;
+}
+
+
+.faqs .faq .faq-icon {
+   position: absolute;
+   top: 50%;
+   right: 0px;
+   transform: translateY(-50%);
+   width: 30px;
+   height: 30px;
+   transition: all 0.2s ease;
+}
+
+.faqs .faq .faq-answer {
+   opacity: 0;
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.2s ease;
+}
+
+.faqs .faq.open .faq-question {
+   margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-answer {
+   max-height: 1000px;
+   opacity: 1;
 }

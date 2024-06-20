@@ -8,22 +8,24 @@ import antiClockWiseImage from "../assets/DematAcImages/Vector2.png";
 const DematAccount = () => {
   return (
     <>
-      <div className="w-full h-[800px] flex justify-center">
+      <div className="w-full h-auto mt-10 flex justify-center overflow-x-hidden">
         <div className="w-[85%] h-[85%] flex flex-col justify-center">
-          <div className="max-w-[25%] mx-auto">
-            <h1 className="p-1.5 bg-[#F2EBFF] text-center text-purple font-bold text-base">
-              Why choose us
+          <div className="md:max-w-[25%] md:mx-auto ">
+            <h1 className=" md:text-center  font-bold text-base">
+              <span className="p-1.5 bg-[#F2EBFF] text-purple">
+                Why choose us
+                </span>
             </h1>
           </div>
 
-          <div className="w-[65%] mx-auto mt-5">
-            <h1 className="text-5xl w-[100%] text-center font-medium">
+          <div className="md:w-[65%] mobile:w-[80%] sm:w-[80%] md:mx-auto mt-5">
+            <h1 className="md:text-5xl sm:text-3xl mobile:text-3xl  w-[100%] md:text-center font-medium">
               Benefits for opening Demat A/C with IGSL:-
             </h1>
           </div>
 
           <div className="w-full flex justify-center mt-8">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-auto-rows-1/3">
               {DematAccountData.map((demataccount) => (
                 <div
                   key={demataccount.id}
@@ -57,14 +59,14 @@ const DematAccount = () => {
 
       <div className="w-full mt-12 flex justify-center">
         <div className="w-[85%] h-[85%] flex flex-col justify-center">
-          <div className="max-w-[25%] mx-auto">
+          <div className="max-w-[25%] md:mx-auto">
             <h1 className="p-1.5 px-3 bg-[#F2EBFF] uppercase text-center text-purple font-bold text-base">
               Steps
             </h1>
           </div>
 
-          <div className="w-[65%] mx-auto mt-5">
-            <h1 className="text-5xl w-[100%] text-center font-medium">
+          <div className="md:w-[65%] sm:w-[80%] mobile:w-[80%] md:mx-auto mt-5">
+            <h1 className="md:text-5xl sm:text-3xl mobile:text-3xl w-[100%] md:text-center font-medium">
               Steps to Open a  <br/>
               <span className="mt-3">
                Demat Trading Account
@@ -74,7 +76,7 @@ const DematAccount = () => {
 
           <div className="w-full mt-10 mb-11 relative">
            
-              <div className="w-full relative flex justify-between mt-12">
+              <div className="w-full relative md:flex md:flex-row sm:flex-col justify-between mt-12">
                   <div className="w-[320px] h-[150px] flex items-center bg-white shadow-xl rounded-lg">
                      <div className="w-[80%] h-[50%] flex flex-col justify-between items-center">
                         <h3 className="w-[90%] mx-auto text-[#30303C] text-2xl">1. <span>Form fill up</span></h3>
@@ -97,10 +99,10 @@ const DematAccount = () => {
                      </div>
                   </div>
               </div>
-               <div className="absolute top-[2%] left-[60%]" >
+               <div className="absolute sm:hidden mobile:hidden md:block top-[2%] left-[60%]" >
                <img src={antiClockWiseImage} alt="" />
             </div>
-             <div className="absolute top-[90%] left-[20%]" >
+             <div className="absolute sm:hidden mobile:hidden md:block top-[90%] left-[20%]" >
                <img src={clockviseImage} alt="" />
             </div>
           </div>

@@ -7,6 +7,8 @@ import DematAccountForm from "./DematAccountForm";
 import Inverstment from "./Inverstment";
 import DematAccount from "./DematAccount";
 import Testimonial from "./Testimonial";
+import Faq from "./Faq";
+import Footer from "./Footer";
 
 
 const InventureLandingPage = () => {
@@ -31,7 +33,7 @@ const InventureLandingPage = () => {
       </nav>
 
       {/* Slider */}
-      <div>
+      <div className="">
          <CustomCarousel>
              { SliderData.map((image, index) => {
           return <img key={index} src={image.image} alt={image.alt} />;
@@ -46,12 +48,12 @@ const InventureLandingPage = () => {
       </div>
 
       {/* Investment */}
-      <div className="mt-16">
+      <div className="mobile:mt-0 sm:mt-0 md:mt-16">
         <Inverstment />
       </div>
 
         {/* Demat Account  */}
-      <div className="mt-16">
+      <div className="">
           <DematAccount/>
       </div>
 
@@ -60,6 +62,14 @@ const InventureLandingPage = () => {
         <Testimonial/>
       </div>
 
+        {/* FAQ section */}
+      <div>
+        <Faq/>
+      </div>
+
+      <div>
+        <Footer/>
+      </div>
       
     </div>
   );

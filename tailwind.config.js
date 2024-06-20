@@ -11,6 +11,9 @@ export default {
         gray: "#F8F2FF",
         lightGray: "#E2E2E8",
       },
+      screens: {
+        mobile: "250px",
+      },
     },
   },
   plugins: [
