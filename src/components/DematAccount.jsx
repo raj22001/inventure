@@ -74,7 +74,7 @@ const DematAccount = () => {
             </h1>
           </div>
 
-          <div className="w-full mt-10 mb-11 relative">
+          <div className="w-full mobile:mt-0 sm:mt-0 md:mt-10 mb-11 relative">
            
               <div className="w-full relative md:flex md:flex-row sm:flex-col justify-between mt-12">
                   <div className="w-[320px] h-[150px] flex items-center bg-white shadow-xl rounded-lg">
@@ -84,14 +84,14 @@ const DematAccount = () => {
                         <p className="w-[90%] mx-auto mt-2">Fill up your personal details in the form above</p>
                      </div>
                   </div>
-                  <div className="w-[320px] mt-10 h-[150px] flex items-center bg-white shadow-xl rounded-lg">
+                  <div className="w-[320px] mobile:mt-5 sm:mt-5 md:mt-10 h-[150px] flex items-center bg-white shadow-xl rounded-lg">
                      <div className="w-[80%] h-[50%] flex flex-col justify-between items-center">
                         <h3 className="w-[90%] mx-auto text-[#30303C] text-2xl">2. <span>Share Details</span></h3>
 
                         <p className="w-[90%] mx-auto mt-2">Fill up your personal details in the form above</p>
                      </div>
                   </div>
-                  <div className="w-[320px] h-[150px] flex items-center bg-white shadow-xl rounded-lg">
+                  <div className="w-[320px] h-[150px] mobile:mt-5 sm:mt-5 md:mt-2 flex items-center bg-white shadow-xl rounded-lg">
                      <div className="w-[80%] h-[50%] flex flex-col justify-between items-center">
                         <h3 className="w-[90%] mx-auto text-[#30303C] text-2xl">3. <span>OTP Authentication</span></h3>
 

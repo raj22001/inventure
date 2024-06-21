@@ -1,4 +1,6 @@
 import firstSliderImage from "../assets/sliderImage1.png";
+import inventureBannerDesktop from "../assets/InventureBannerDesktop1.jpg";
+import inventureBannerMobile from "../assets/InventureBannerMobile1.jpg";
 
 // InventureData Images
 import EquityImage from "../assets/InventureData/Equity.png";
@@ -30,26 +32,180 @@ export const NavbarData = [
     id: 1,
     Navtitle: "About us",
     Link: "",
+    NavTitleData: [],
   },
   {
     id: 2,
     Navtitle: "Product & Services",
     Link: "",
+    NavTitleData: [
+      {
+        title: "Equity",
+        titleLink: "",
+      },
+      {
+        title: "Currency",
+        titleLink: "",
+      },
+      {
+        title: "Commodity",
+        titleLink: "",
+      },
+      {
+        title: "Trade App",
+        titleLink: "",
+      },
+      {
+        title: "Mutual Funds",
+        titleLink: "",
+      },
+      {
+        title: "Products & Services",
+        titleLink: "",
+      },
+      {
+        title: "Insurance",
+        titleLink: "",
+      },
+      {
+        title: "IPOs",
+        titleLink: "",
+      },
+      {
+        title: "Depository",
+        titleLink: "",
+      },
+      {
+        title: "MTF",
+        titleLink: "",
+      },
+
+      {
+        title: "Web Trading",
+        titleLink: "",
+      },
+      {
+        title: "Research",
+        titleLink: "",
+      },
+      {
+        title: "Market Reports",
+        titleLink: "",
+      },
+      {
+        title: "Technical Reports",
+        titleLink: "",
+      },
+      {
+        title: "Fundamental Reports",
+        titleLink: "",
+      },
+    ],
   },
   {
     id: 3,
     Navtitle: "Partner",
     Link: "",
+    NavTitleData: [],
   },
   {
     id: 4,
     Navtitle: "Quick Links",
     Link: "",
+    NavTitleData: [
+      {
+        title: "6 Attributes",
+        titleLink: "",
+      },
+      {
+        title: "Regulation 30",
+        titleLink: "",
+      },
+      {
+        title: "Subsidaries Financials",
+        titleLink: "",
+      },
+      {
+        title: "Offer Documents",
+        titleLink: "",
+      },
+      {
+        title: "E-IPO",
+        titleLink: "",
+      },
+      {
+        title: "E-voting",
+        titleLink: "",
+      },
+      {
+        title: "Re-KYC",
+        titleLink: "",
+      },
+      {
+        title: "Downloads",
+        titleLink: "",
+      },
+      {
+        title: "Trading Software",
+        titleLink: "",
+      },
+      {
+        title: "Margin File",
+        titleLink: "",
+      },
+      {
+        title: "KYC Form",
+        titleLink: "",
+      },
+      {
+        title: "Compliance",
+        titleLink: "",
+      },
+      {
+        title: "Others",
+        titleLink: "",
+      },
+    ],
   },
   {
     id: 5,
     Navtitle: "Investor Relation",
     Link: "",
+    NavTitleData: [
+      {
+        title: "Financials",
+        titleLink: "",
+      },
+      {
+        title: "Board Meeting",
+        titleLink: "",
+      },
+      {
+        title: "Others",
+        titleLink: "",
+      },
+      {
+        title: "ROC Compliance",
+        titleLink: "",
+      },
+      {
+        title: "Company Info",
+        titleLink: "",
+      },
+      {
+        title: "Policy & COC",
+        titleLink: "",
+      },
+      {
+        title: "Shareholder Meeting",
+        titleLink: "",
+      },
+
+      {
+        title: "SEBI Compliance",
+        titleLink: "",
+      },
+    ],
   },
   {
     id: 6,
@@ -58,25 +214,425 @@ export const NavbarData = [
   },
 ];
 
+export const NavbarDatahover = [
+  {
+    id: 1,
+    Navtitle: "About us",
+    Link: "",
+    NavTitleData: [],
+  },
+  {
+    id: 2,
+    Navtitle: "Product & Services",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "Equity",
+        titleLink: "https://www.inventuregrowth.com/equity",
+      },
+      {
+        title: "Currency",
+        titleLink: "https://www.inventuregrowth.com/currency",
+      },
+      {
+        title: "Commodity",
+        titleLink: "https://www.inventuregrowth.com/commodity",
+      },
+      {
+        title: "Trade App",
+        titleLink: "https://www.inventuregrowth.com/tradeapp",
+      },
+      {
+        title: "Mutual Funds",
+        titleLink: "https://www.inventuregrowth.com/mutualfund",
+      },
+      {
+        title: "Products & Services",
+        titleLink: "",
+      },
+      {
+        title: "Insurance",
+        titleLink: "https://www.inventuregrowth.com/Insurance",
+      },
+      {
+        title: "IPOs",
+        titleLink: "https://www.inventuregrowth.com/ipo",
+      },
+      {
+        title: "Depository",
+        titleLink: "https://www.inventuregrowth.com/depository",
+      },
+      {
+        title: "MTF",
+        titleLink: "https://www.inventuregrowth.com/mtf",
+      },
+
+      {
+        title: "Web Trading",
+        titleLink: "https://www.inventuregrowth.com/webapp",
+      },
+      {
+        title: "Research",
+        titleLink: "",
+      },
+      {
+        title: "Market Reports",
+        titleLink:
+          "https://www.inventuregrowth.com/marketreports?pagename=Market%20Reports",
+      },
+      {
+        title: "Technical Reports",
+        titleLink:
+          "https://www.inventuregrowth.com/technicalreports?pagename=Technical%20Reports",
+      },
+      {
+        title: "Fundamental Reports",
+        titleLink:
+          "https://www.inventuregrowth.com/fundamentalreports?pagename=Fundamental%20Reports",
+      },
+    ],
+  },
+  {
+    id: 3,
+    Navtitle: "Partner",
+    Link: "",
+    NavTitleData: [],
+  },
+  {
+    id: 4,
+    Navtitle: "Quick Links",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "6 Attributes",
+        titleLink: "",
+      },
+      {
+        title: "Regulation 30",
+        titleLink: "https://www.inventuregrowth.com/regulation30?categoryId=7",
+      },
+      {
+        title: "Subsidaries Financials",
+        titleLink: "https://www.inventuregrowth.com/subsidiaries",
+      },
+      {
+        title: "Offer Documents",
+        titleLink: "https://www.inventuregrowth.com/offerdocuments",
+      },
+      {
+        title: "E-IPO",
+        titleLink: "https://ipo.inventuregrowth.com/",
+      },
+      {
+        title: "E-voting",
+        titleLink: "https://www.evotingindia.com/",
+      },
+      {
+        title: "Re-KYC",
+        titleLink: "https://signup.inventuregrowth.com/re-ekyc/",
+      },
+      {
+        title: "Downloads",
+        titleLink: "",
+      },
+      {
+        title: "Trading Software",
+        titleLink: "https://www.inventuregrowth.com/downloads?categoryId=8",
+      },
+      {
+        title: "Margin File",
+        titleLink: "https://www.inventuregrowth.com/downloads?categoryId=9",
+      },
+      {
+        title: "KYC Form",
+        titleLink: "https://www.inventuregrowth.com/downloads?categoryId=10",
+      },
+      {
+        title: "Compliance",
+        titleLink: "https://www.inventuregrowth.com/downloads?categoryId=11",
+      },
+      {
+        title: "Others",
+        titleLink: "https://www.inventuregrowth.com/downloads?categoryId=13",
+      },
+    ],
+  },
+  {
+    id: 5,
+    Navtitle: "Investor Relation",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "Financials",
+        titleLink: "",
+      },
+      {
+        title: "Board Meeting",
+        titleLink: "",
+      },
+      {
+        title: "Others",
+        titleLink: "",
+      },
+      {
+        title: "ROC Compliance",
+        titleLink: "",
+      },
+      {
+        title: "Company Info",
+        titleLink: "",
+      },
+      {
+        title: "Policy & COC",
+        titleLink: "",
+      },
+      {
+        title: "Shareholder Meeting",
+        titleLink: "",
+      },
+
+      {
+        title: "SEBI Compliance",
+        titleLink: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    Navtitle: "Login",
+    Link: "",
+    NavTitleData: [],
+  },
+];
+
+export const NavbarDatahoverData2 = [
+  {
+    id: 1,
+    Navtitle: "Product & Services",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "Products & Services",
+        titleLink: "",
+        otherData: [
+          {
+            title: "Equity",
+            titleLink: "https://www.inventuregrowth.com/equity",
+          },
+          {
+            title: "Currency",
+            titleLink: "https://www.inventuregrowth.com/currency",
+          },
+          {
+            title: "Commodity",
+            titleLink: "https://www.inventuregrowth.com/commodity",
+          },
+          {
+            title: "Trade App",
+            titleLink: "https://www.inventuregrowth.com/tradeapp",
+          },
+          {
+            title: "Mutual Funds",
+            titleLink: "https://www.inventuregrowth.com/mutualfund",
+          },
+        ],
+      },
+      {
+        title: "Products & Services",
+        titleLink: "",
+        otherData: [
+          {
+            title: "Insurance",
+            titleLink: "https://www.inventuregrowth.com/Insurance",
+          },
+          {
+            title: "IPOs",
+            titleLink: "https://www.inventuregrowth.com/ipo",
+          },
+          {
+            title: "Depository",
+            titleLink: "https://www.inventuregrowth.com/depository",
+          },
+          {
+            title: "MTF",
+            titleLink: "https://www.inventuregrowth.com/mtf",
+          },
+
+          {
+            title: "Web Trading",
+            titleLink: "https://www.inventuregrowth.com/webapp",
+          },
+        ],
+      },
+      {
+        title: "Research",
+        titleLink: "",
+        otherData: [
+          {
+            title: "Market Reports",
+            titleLink:
+              "https://www.inventuregrowth.com/marketreports?pagename=Market%20Reports",
+          },
+          {
+            title: "Technical Reports",
+            titleLink:
+              "https://www.inventuregrowth.com/technicalreports?pagename=Technical%20Reports",
+          },
+          {
+            title: "Fundamental Reports",
+            titleLink:
+              "https://www.inventuregrowth.com/fundamentalreports?pagename=Fundamental%20Reports",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    Navtitle: "About us",
+    Link: "",
+    NavTitleData: [],
+  },
+  {
+    id: 3,
+    Navtitle: "Partner",
+    Link: "",
+    NavTitleData: [],
+  },
+  {
+    id: 4,
+    Navtitle: "Quick Links",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "6 Attributes",
+        titleLink: "",
+        otherData: [
+          {
+            title: "Regulation 30",
+            titleLink:
+              "https://www.inventuregrowth.com/regulation30?categoryId=7",
+          },
+          {
+            title: "Subsidaries Financials",
+            titleLink: "https://www.inventuregrowth.com/subsidiaries",
+          },
+          {
+            title: "Offer Documents",
+            titleLink: "https://www.inventuregrowth.com/offerdocuments",
+          },
+          {
+            title: "E-IPO",
+            titleLink: "https://ipo.inventuregrowth.com/",
+          },
+          {
+            title: "E-voting",
+            titleLink: "https://www.evotingindia.com/",
+          },
+          {
+            title: "Re-KYC",
+            titleLink: "https://signup.inventuregrowth.com/re-ekyc/",
+          },
+        ],
+      },
+      {
+        title: "Downloads",
+        titleLink: "",
+        otherData: [
+          {
+            title: "Trading Software",
+            titleLink: "https://www.inventuregrowth.com/downloads?categoryId=8",
+          },
+          {
+            title: "Margin File",
+            titleLink: "https://www.inventuregrowth.com/downloads?categoryId=9",
+          },
+          {
+            title: "KYC Form",
+            titleLink:
+              "https://www.inventuregrowth.com/downloads?categoryId=10",
+          },
+          {
+            title: "Compliance",
+            titleLink:
+              "https://www.inventuregrowth.com/downloads?categoryId=11",
+          },
+          {
+            title: "Others",
+            titleLink:
+              "https://www.inventuregrowth.com/downloads?categoryId=13",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    Navtitle: "Investor Relation",
+    Link: "",
+    NavTitleData: [
+      {
+        title: "Financials",
+        titleLink: "",
+      },
+      {
+        title: "Board Meeting",
+        titleLink: "",
+      },
+      {
+        title: "Others",
+        titleLink: "",
+      },
+      {
+        title: "ROC Compliance",
+        titleLink: "",
+      },
+      {
+        title: "Company Info",
+        titleLink: "",
+      },
+      {
+        title: "Policy & COC",
+        titleLink: "",
+      },
+      {
+        title: "Shareholder Meeting",
+        titleLink: "",
+      },
+
+      {
+        title: "SEBI Compliance",
+        titleLink: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    Navtitle: "Login",
+    Link: "",
+    NavTitleData: [],
+  },
+];
+
 export const SliderData = [
   {
     id: 1,
-    image: firstSliderImage,
+    image: inventureBannerDesktop,
     alt: "first Image",
   },
   {
     id: 2,
-    image: firstSliderImage,
+    image: inventureBannerDesktop,
     alt: "first Image",
   },
   {
     id: 3,
-    image: firstSliderImage,
+    image: inventureBannerDesktop,
     alt: "first Image",
   },
   {
     id: 4,
-    image: firstSliderImage,
+    image: inventureBannerDesktop,
     alt: "first Image",
   },
 ];
@@ -274,27 +830,27 @@ export const FooterData = [
     subtitle: [
       {
         heading: "About us",
-        link: "",
+        link: "https://www.inventuregrowth.com/aboutus",
       },
       {
         heading: "Careers",
-        link: "",
+        link: "https://www.inventuregrowth.com/career",
       },
       {
         heading: "Contact Us",
-        link: "",
+        link: "https://www.inventuregrowth.com/contactUs",
       },
       {
         heading: "Terms And Conditions",
-        link: "",
+        link: "https://www.inventuregrowth.com/termsandcondition",
       },
       {
         heading: "Disclaimer",
-        link: "",
+        link: "https://www.inventuregrowth.com/disclaimer",
       },
       {
         heading: "Privacy & Policy",
-        link: "",
+        link: "https://www.inventuregrowth.com/privacypolicy",
       },
     ],
   },
@@ -304,23 +860,23 @@ export const FooterData = [
     subtitle: [
       {
         heading: "IGSL AERO",
-        link: "",
+        link: "https://trading.inventuregrowth.com/Aero/login",
       },
       {
         heading: "Client Back-Office",
-        link: "",
+        link: "https://bo.inventuregrowth.com/WebClient/",
       },
       {
         heading: "Client eKYC",
-        link: "",
+        link: "https://signup.inventuregrowth.com/default.aspx",
       },
       {
         heading: "Partner Back-Office",
-        link: "",
+        link: "https://bo.inventuregrowth.com/WebLogin/index.cfm?Logintype=Branch",
       },
       {
         heading: "Partner eKYC",
-        link: "",
+        link: "https://signup.inventuregrowth.com/ekyc-admin/login.aspx",
       },
     ],
   },
@@ -330,27 +886,27 @@ export const FooterData = [
     subtitle: [
       {
         heading: "Equity Trading",
-        link: "",
+        link: "https://www.inventuregrowth.com/equity",
       },
       {
         heading: "Currency Trading",
-        link: "",
+        link: "https://www.inventuregrowth.com/currency",
       },
       {
         heading: "Commodity Trading",
-        link: "",
+        link: "https://www.inventuregrowth.com/commodity",
       },
       {
         heading: "Mutual Funds",
-        link: "",
+        link: "https://www.inventuregrowth.com/mutualfund",
       },
       {
         heading: "CDSL e-voting",
-        link: "",
+        link: "https://www.evotingindia.com/",
       },
       {
         heading: "NSDL eVoting",
-        link: "",
+        link: "https://www.evotingindia.com/",
       },
     ],
   },
@@ -360,39 +916,39 @@ export const FooterData = [
     subtitle: [
       {
         heading: "Client Back-Office",
-        link: "",
+        link: "https://bo.inventuregrowth.com/WebLogin/index.cfm?Logintype=Branch",
       },
       {
         heading: "Branch Back-Office",
-        link: "",
+        link: "https://bo.inventuregrowth.com/WebLogin/index.cfm?Logintype=Branch",
       },
       {
         heading: "Branch eKYC",
-        link: "",
+        link: "https://signup.inventuregrowth.com/ekyc-admin/login.aspx",
       },
       {
         heading: "IGSL Elite",
-        link: "",
+        link: "https://elite.inventuregrowth.com/",
       },
       {
         heading: "Partner",
-        link: "",
+        link: "https://www.inventuregrowth.com/becomeapartner",
       },
       {
         heading: "Documents",
-        link: "",
+        link: "https://www.inventuregrowth.com/offerdocuments",
       },
       {
         heading: "Downloads",
-        link: "",
+        link: "https://www.inventuregrowth.com/downloads",
       },
       {
         heading: "Investor Charter",
-        link: "",
+        link: "https://www.inventuregrowth.com/investorCharter",
       },
       {
         heading: "Account closure",
-        link: "",
+        link: "https://www.inventuregrowth.com/accountclosure",
       },
     ],
   },

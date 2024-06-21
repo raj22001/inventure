@@ -36,7 +36,7 @@ html {
 
 .container__slider {
    position: relative;
-   width: 90%;
+   width: 100%;
    margin: 0 auto;
    padding: 0;
    overflow: hidden;
@@ -58,15 +58,15 @@ html {
    color: black;
 }
 
-.slider__btn-next {
+/* .slider__btn-next {
    position: absolute;
    right: 0;
-}
-
+} */
+/* 
 .slider__btn-prev {
    position: absolute;
    left: 0;
-}
+} */
 
 .container__slider__links {
    position: absolute;
@@ -193,4 +193,34 @@ html {
 .faqs .faq.open .faq-answer {
    max-height: 1000px;
    opacity: 1;
+}
+
+.inline {
+   display: inline;
+}
+
+/* @keyframes slide-up {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.animate-slide-up {
+   width: 100%;
+   animation: slide-up 0.7s ease-out;
+} */
+
+.nav-item {
+   transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+   color: purple;
+   border-bottom: 2px solid purple;
 }
