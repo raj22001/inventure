@@ -28,6 +28,8 @@ const DematAccountForm = () => {
     name: "",
     dematEmail: "",
     phoneNumber: "",
+    terms: false,
+    
   };
 
   const DematAccoutObjectSchema = yup.object().shape({
@@ -47,6 +49,9 @@ const DematAccountForm = () => {
       .min(1111111111, "Please enter 10 digit valid number")
       .max(9999999999, "Please enter 10 digit valid number")
       .required("Please enter the Phone Number"),
+      terms: yup.boolean()
+    .oneOf([true], 'You must agree to the terms and conditions')
+    .required('You must agree to the terms and conditions'),
   });
 
   const {
@@ -68,10 +73,13 @@ const DematAccountForm = () => {
         return;
       }
 
+
+
       const payload = {
         Email: values.name,
         Password: values.dematEmail,
         FullName: values.phoneNumber,
+        checked : values.terms
       };
 
       console.log("payload", payload);
@@ -224,19 +232,21 @@ const DematAccountForm = () => {
                       type="checkbox"
                       id="terms"
                       name="terms"
-                      checked={isChecked}
-                      onChange={() => setIsChecked(!isChecked)}
+                      checked={values.terms}
+                      onChange={handleChange}
+                      value={values.terms}
                       className="mr-2"
                     />
                     <label htmlFor="terms" className="text-base text-gray-700">
                       I agree to the terms and conditions
                     </label>
-                    {errors.checkbox && (
+                    
+                  </div>
+                  {errors.terms && (
                       <p className="font-Marcellus text-start text-red-900 ml-2">
-                        {errors.checkbox}
+                        {errors.terms}
                       </p>
                     )}
-                  </div>
 
                   <div className="flex w-full mt-8">
                     <button
