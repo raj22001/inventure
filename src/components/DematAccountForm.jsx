@@ -43,12 +43,9 @@ const DematAccountForm = () => {
       .email("Invalid email")
       .required("Email Id is required"),
     phoneNumber: yup
-      .number()
-      .typeError("Please enter a valid number")
-      .integer("Please enter a valid number")
-      .min(1111111111, "Please enter 10 digit valid number")
-      .max(9999999999, "Please enter 10 digit valid number")
-      .required("Please enter the Phone Number"),
+      .string() // Convert to string for exact length validation
+    .matches(/^\d{10}$/, "Phone number must be exactly 10 digits")
+    .required("Please enter the Phone Number"),
       terms: yup.boolean()
     .oneOf([true], 'You must agree to the terms and conditions')
     .required('You must agree to the terms and conditions'),
